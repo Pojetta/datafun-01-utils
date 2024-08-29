@@ -20,10 +20,22 @@ has_international_clients: bool = True
 years_in_operation: int = 10
 
 # List of strings representing the skills offered by the company
-skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+skills_offered: list = ["Data Analysis","Data Visualization","Machine Learning Models"]
 
 # List of floats representing individual client satisfaction scores
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+
+# Boolean variable to indicate if the company is accepting new clients
+accepting_new_clients: bool = True
+
+# Integer variable showing the number of clients served
+clients_served: int = 452
+
+# List of strings representing the services offered by the company
+services_offered: list = ["Predictive Analytics","Business Intelligence","Data Warehousing"]
+
+# List of floats representing the accuracy percentages of predictive models
+model_accuracy: list = [92.5, 88.3, 94.7, 90.2, 93.8]
 
 ###################################
 # Declare a global variable named byline. 
@@ -38,8 +50,11 @@ Has International Clients:  {has_international_clients}
 Years in Operation:         {years_in_operation}
 Skills Offered:             {skills_offered}
 Client Satisfaction Scores: {client_satisfaction_scores}
+Clients Served:             {clients_served}
+Accepting New Clients:      {accepting_new_clients}
+Model Accuracy:             {model_accuracy}
+Services Offered:           {services_offered}
 """
-
 
 #####################################
 # Define the get_byline() Function
@@ -64,4 +79,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
